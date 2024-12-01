@@ -36,6 +36,4 @@ if selected == "SAR Image Colourization":
         test_images = [st.camera_input("Capture an Image:")]
         if st.button("Show Images"):
             st.image(test_images, width=4, use_column_width=True)
-
-    if st.button("Predict"):
         
