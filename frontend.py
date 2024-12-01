@@ -4,7 +4,7 @@ import streamlit as st
 st.set_page_config(page_title="SAR Image Colourization", layout="centered")
 
 # Frontend: Title and Subheading
-st.title("Image Prediction Web App")
+st.title("SAR Image Colourization")
 st.subheader("Upload an image to get predictions")
 
 # File upload functionality
