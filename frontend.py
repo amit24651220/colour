@@ -27,6 +27,12 @@ st.markdown(
         .css-1v3fvcr, .css-qrbaxs, .css-16huue1 {
             font-family: Arial, sans-serif;
         }
+        [data-testid="stAppViewContainer"] {
+            background-image: url("https://zoom.earth/maps/satellite-hd/");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
     </style>
     """,
     unsafe_allow_html=True
