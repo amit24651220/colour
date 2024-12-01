@@ -2,9 +2,9 @@ import streamlit as st
 from PIL import Image
 import io
 
+# Set the page configuration
 st.set_page_config(page_title="Image Prediction App", layout="wide")
 
-# Injecting custom CSS for sidebar styling
 st.markdown(
     """
     <style>
@@ -32,28 +32,20 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# Set the page configuration
-
-
 # Sidebar menu
 st.sidebar.title("Navigation")
 menu = st.sidebar.radio("Go to", ["Home", "Upload Image", "Use Camera"])
 
 # Home Section
 if menu == "Home":
-    st.title("Welcome to the SAR Image Colourization Web App")
+    st.title("Welcome to the SAR Image Colurization Web App")
     st.subheader("Your one-stop solution for image predictions!")
     st.markdown("""
         ### Features:
         - Upload an image or capture one using your camera.
         - Get predictions using Deep Learning models.
     """)
-    # Add an attractive image
-    st.image(
-        "https://images.unsplash.com/photo-1560807707-8cc77767d783?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fGlufGVufDB8fHx8MTY4Njk4MzY4Ng&ixlib=rb-1.2.1&q=80&w=1080",
-        caption="AI-Powered Image Predictions",
-        use_column_width=True,
-    )
+    st.image("https://via.placeholder.com/800x400.png?text=Image+Prediction+App", use_column_width=True)
     st.markdown("---")
 
 # Upload Image Section
@@ -89,4 +81,4 @@ elif menu == "Use Camera":
 
 # Footer
 st.sidebar.markdown("---")
-st.sidebar.caption("Built by Amit")
+st.sidebar.caption("Built by Amit Mane")
