@@ -2,6 +2,8 @@ import streamlit as st
 from PIL import Image
 import io
 
+st.set_page_config(page_title="Image Prediction App", layout="wide")
+
 # Injecting custom CSS for sidebar styling
 st.markdown(
     """
@@ -31,7 +33,7 @@ st.markdown(
 )
 
 # Set the page configuration
-st.set_page_config(page_title="Image Prediction App", layout="wide")
+
 
 # Sidebar menu
 st.sidebar.title("Navigation")
