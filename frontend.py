@@ -20,7 +20,7 @@ st.markdown(
 
         /* Style for headers */
         h1, h2 {
-            color: #000080;
+            color: #F0F8FF;
         }
 
         /* General body font style */
@@ -28,7 +28,7 @@ st.markdown(
             font-family: Arial, sans-serif;
         }
         [data-testid="stAppViewContainer"] {
-            background-image: url("https://th.bing.com/th/id/OIP.-8fTYvOql4-2HRbA2s291wHaEo?w=276&h=180&c=7&r=0&o=5&pid=1.7");
+            background-image: url("https://img.freepik.com/premium-photo/highquality-hd-earth-globe-with-neon-internet-connections-international-internet-day-freepik_435508-268.jpg");
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
