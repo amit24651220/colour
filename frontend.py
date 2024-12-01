@@ -16,9 +16,10 @@ if uploaded_file is not None:
    st.image(uploaded_file, caption="Uploaded Image", use_column_width=True)
 
     # Predict button
-    if st.button("Predict"):
-        # Backend placeholder (replace with your model's prediction code)
-        st.write("Prediction: [Model's output goes here]")
+if st.button("Predict"):
+    st.write("Prediction: [Model's output goes here]")
+    # Backend placeholder (replace with your model's prediction code)
+     
 
 # Footer or additional info
 st.markdown("---")
