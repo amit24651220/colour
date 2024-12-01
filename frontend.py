@@ -20,7 +20,7 @@ st.markdown(
 
         /* Style for headers */
         h1, h2 {
-            color: #ff4500;
+            color: #000080;
         }
 
         /* General body font style */
@@ -38,7 +38,7 @@ menu = st.sidebar.radio("Go to", ["Home", "Upload Image", "Use Camera"])
 
 # Home Section
 if menu == "Home":
-    st.title("Welcome to the SAR Image Colurization Web App")
+    st.title("Welcome to the SAR Image Colourization Web App")
     st.subheader("Your one-stop solution for image predictions!")
     st.markdown("""
         ### Features:
