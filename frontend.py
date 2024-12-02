@@ -40,7 +40,7 @@ st.markdown(
 
 # Sidebar menu
 st.sidebar.title("Navigation")
-menu = st.sidebar.radio("Go to", ["Home", "Upload Image", "Use Camera"])
+menu = st.sidebar.radio("Go to", ["Home", "Upload Image", "Use Camera","Results"])
 
 # Home Section
 if menu == "Home":
