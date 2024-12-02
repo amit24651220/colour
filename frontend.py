@@ -10,7 +10,7 @@ st.markdown(
     <style>
         /* Change the sidebar background to orange */
         [data-testid="stSidebar"] {
-            background-color: #FFE900;
+            background-color: #FFFFF;
         }
 
         /* Style sidebar text */
