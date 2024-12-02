@@ -51,7 +51,7 @@ if menu == "Home":
         - Upload an image or capture one using your camera.
         - Get predictions using Deep Learning models.
     """)
-    st.image("https://via.placeholder.com/800x400.png?text=Image+Prediction+App", use_column_width=True)
+    st.image("https://www.euspaceimaging.com/wp-content/uploads/sar_vs_optical-768x509.png", use_column_width=True)
     st.markdown("---")
 
 # Upload Image Section
