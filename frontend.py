@@ -85,6 +85,9 @@ elif menu == "Use Camera":
             # Placeholder for prediction logic
             st.success("Prediction: [Model's output goes here]")
 
+elif menu == "Results":
+    st.success("Prediction: [Model's output goes here]")
+
 # Footer
 st.sidebar.markdown("---")
 st.sidebar.caption("Built by Amit Mane")
