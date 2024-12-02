@@ -20,7 +20,7 @@ st.markdown(
 
         /* Style for headers */
         h1, h2 {
-            color: #F0F8FF;
+            color: #000000;
         }
 
         /* General body font style */
