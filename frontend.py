@@ -28,7 +28,7 @@ st.markdown(
             font-family: Arial, sans-serif;
         }
         [data-testid="stAppViewContainer"] {
-            background-image: url("https://img.freepik.com/premium-photo/highquality-hd-earth-globe-with-neon-internet-connections-international-internet-day-freepik_435508-268.jpg");
+            background-image: url("https://th.bing.com/th?id=OIP.LwgrKDp65DXticGQ41DS4AHaEM&w=332&h=188&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2");
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -90,4 +90,4 @@ elif menu == "Results":
 
 # Footer
 st.sidebar.markdown("---")
-st.sidebar.caption("Built by Amit Mane")
+#st.sidebar.caption("Built by Amit Mane")
