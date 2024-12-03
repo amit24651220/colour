@@ -15,7 +15,7 @@ st.markdown(
 
         /* Style sidebar text */
         [data-testid="stSidebar"] .css-1v3fvcr {
-            color: white;
+            color: #000000;
         }
 
         /* Style for headers */
