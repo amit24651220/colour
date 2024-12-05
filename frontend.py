@@ -51,11 +51,16 @@ if menu == "Home":
         """,
         unsafe_allow_html=True
     )
-    st.markdown("""
-        ### Features:
-        - Upload an image or capture one using your camera.
-        - Get predictions using Deep Learning models.
-    """)
+    st.markdown(
+    """
+    ### Features:
+    <ul>
+        <li style='color:blue;'>Upload an image or capture one using your camera.</li>
+        <li style='color:blue;'>Get predictions using Deep Learning models.</li>
+    </ul>
+    """,
+    unsafe_allow_html=True
+)
     st.image("https://www.gim-international.com/cache/d/e/1/3/d/de13d4d43e847aab7eec6e159b3a676447335ac5.png", use_column_width=True)
     st.markdown("---")
 
