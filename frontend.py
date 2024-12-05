@@ -45,7 +45,12 @@ menu = st.sidebar.radio("Go to", ["Home", "Upload Image", "Use Camera","Results"
 # Home Section
 if menu == "Home":
     st.title("Welcome to the SAR Image Colourization Web App")
-    st.subheader("Your one-stop solution for image predictions!")
+    st.markdown(
+        """
+        <h3 style='color:blue;'>Your one-stop solution for image predictions!</h3>
+        """,
+        unsafe_allow_html=True
+    )
     st.markdown("""
         ### Features:
         - Upload an image or capture one using your camera.
