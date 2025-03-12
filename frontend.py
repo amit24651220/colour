@@ -80,7 +80,7 @@ if menu == "Home":
     st.title("Welcome to the SAR Image Colourization Web App")
     st.markdown(
         """
-        <h3 style='color:blue;'>Your one-stop solution for image predictions!</h3>
+        <h3 style='color:black;'>Your one-stop solution for image predictions!</h3>
         """,
         unsafe_allow_html=True
     )
