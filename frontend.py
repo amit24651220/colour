@@ -8,36 +8,48 @@ st.set_page_config(page_title="Image Prediction App", layout="wide")
 st.markdown(
     """
     <style>
-        /* Change the sidebar background to orange */
+        /* Sidebar Styling */
         [data-testid="stSidebar"] {
-            background-color: #FFFFF;
+            background: linear-gradient(135deg, #f4f4f4, #e0e0e0);
+            padding: 20px;
+            border-right: 2px solid #d1d1d1;
         }
 
-        /* Style sidebar text */
-        [data-testid="stSidebar"] .css-1v3fvcr {
-            color: #000000;
+        /* Sidebar Text Styling */
+        [data-testid="stSidebar"] * {
+            color: #333333;
+            font-family: 'Arial', sans-serif;
+            font-size: 16px;
         }
 
-        /* Style for headers */
-        h1, h2 {
-            color: #000000;
+        /* Header Styling */
+        h1, h2, h3 {
+            color: #222222;
+            font-family: 'Poppins', sans-serif;
         }
 
-        /* General body font style */
-        .css-1v3fvcr, .css-qrbaxs, .css-16huue1 {
-            font-family: Arial, sans-serif;
+        /* Body Font Styling */
+        body, [data-testid="stAppViewContainer"] * {
+            font-family: 'Roboto', sans-serif;
         }
+
+        /* Background Image */
         [data-testid="stAppViewContainer"] {
-            background-image: url("https://th.bing.com/th?id=OIP.biGocqwyB42JnfNPbWN9xAHaD7&w=343&h=182&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2");
+            background: url("https://th.bing.com/th?id=OIP.biGocqwyB42JnfNPbWN9xAHaD7&w=343&h=182&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2") no-repeat center center fixed;
             background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
+        }
+
+        /* Container Styling */
+        .stApp {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         }
     </style>
     """,
     unsafe_allow_html=True
 )
-
 # Sidebar menu
 st.sidebar.title("Navigation")
 menu = st.sidebar.radio("Go to", ["Home", "Upload Image", "Use Camera","Results"])
