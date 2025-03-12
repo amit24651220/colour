@@ -10,47 +10,68 @@ st.markdown(
     <style>
         /* Sidebar Styling */
         [data-testid="stSidebar"] {
-            background: linear-gradient(135deg, #f4f4f4, #e0e0e0);
+            background: linear-gradient(135deg, #1e1e1e, #292929);
             padding: 20px;
-            border-right: 2px solid #d1d1d1;
+            border-right: 3px solid #ff6600;
+            box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.2);
         }
 
         /* Sidebar Text Styling */
         [data-testid="stSidebar"] * {
-            color: #333333;
-            font-family: 'Arial', sans-serif;
+            color: #ffffff;
+            font-family: 'Poppins', sans-serif;
             font-size: 16px;
         }
 
         /* Header Styling */
         h1, h2, h3 {
-            color: #222222;
+            color: #ff6600;
             font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
         }
 
         /* Body Font Styling */
         body, [data-testid="stAppViewContainer"] * {
             font-family: 'Roboto', sans-serif;
+            color: #ffffff;
         }
 
         /* Background Image */
         [data-testid="stAppViewContainer"] {
-            background: url("https://th.bing.com/th?id=OIP.biGocqwyB42JnfNPbWN9xAHaD7&w=343&h=182&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2") no-repeat center center fixed;
+            background: url("https://source.unsplash.com/1600x900/?technology,abstract") no-repeat center center fixed;
             background-size: cover;
         }
 
-        /* Container Styling */
+        /* Main App Container */
         .stApp {
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.8);
-            border-radius: 12px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 15px;
+            box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        /* Custom Button */
+        .stButton > button {
+            background-color: #ff6600;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 8px;
+            padding: 10px 20px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .stButton > button:hover {
+            background-color: #ff4500;
+            transform: scale(1.05);
         }
     </style>
     """,
     unsafe_allow_html=True
-)
-# Sidebar menu
+)# Sidebar menu
 st.sidebar.title("Navigation")
 menu = st.sidebar.radio("Go to", ["Home", "Upload Image", "Use Camera","Results"])
 
